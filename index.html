@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Note Taking App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>TS Note Taking App</h1>
+    <div class="container">
+      <ul id="note-list">
+        <li class="note" data-id="draft">
+          <div class="note__buttons">
+            <button id="add" class="note__add">Add</button>
+            <button id="reset" class="note__reset">Reset</button>
+          </div>
+          <input
+            class="note__title"
+            type="text"
+            id="title"
+            placeholder="Title"
+          /><br />
+          <hr />
+          <textarea
+            class="note__description"
+            id="description"
+            placeholder="Description"
+          ></textarea>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <template id="note">
+    <li class="note">
+      <div class="note__buttons">
+        <button class="note__edit">Edit</button>
+        <button class="note__remove">Remove</button>
+      </div>
+      <h4 class="note__title"></h4>
+      <hr />
+      <pre class="note__description"></pre>
+    </li>
+  </template>
+  <script src="main.js"></script>
+</html>
